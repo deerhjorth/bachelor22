@@ -1,6 +1,9 @@
 # bachelor22
 Repo for anmj and chhj's '22 bachelor project. 
 
+#### Original repository
+The repository in which this was developed can be found at https://github.itu.dk/chhj/bachelor22. This, however, requires an ITU login - thus, this repo was created.
+
 #### Final website
 The final edition of the data journalism pice can be found here: https://deerhjorth.github.io/bachelor22/
 
