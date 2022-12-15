@@ -1,0 +1,370 @@
+
+/* div.sticky_nav {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+background-color: #333;
+padding: 50px;
+font-size: 20px;
+z-index: 1000;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1d1d1d;
+  }
+
+  .wrapper {
+    padding: 96px 0;
+  }
+
+  .font-secondary {
+    font-family: 'Lora', serif !important;
+  }
+
+  .text-h1 {
+    font-size: 36px;
+    line-height: 52px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+
+  .text-h2 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  .text-body-1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .text-body-2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    text-align-last: left;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .blockquote {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 28px;
+    }  
+  }
+  
+  .text-caption {
+    font-size: 14px;
+    line-height: 22px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 12px;
+      line-height: 18px; 
+    }
+  }
+
+  a {
+    /* color: #104E8B !important; */
+    color: #ffffff !important;
+    border-bottom: 0px solid #104E8B;
+    text-decoration: none;
+    word-break: break-word;
+  }
+  
+  /* Small devices (tablets, 768px and up) */
+  /* @media (min-width: @screen-sm-min) { ... } */
+
+  /* Medium devices (desktops, 992px and up) */
+  /* @media (min-width: @screen-md-min) { ... } */
+
+  /* Large devices (large desktops, 1200px and up) */
+  /* @media (min-width: @screen-lg-min) { ... } */
+
+  #scrolly__section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* background-color: #f3f3f3; */
+    padding: 1rem;
+  }
+
+  #scrolly__section > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .scrolly__content {
+    position: relative;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .scrolly__chart {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 80;
+  }
+
+  .scrolly__chart iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: 80;
+  }
+
+  .step {
+    margin: 0 auto 2rem auto;
+    /* border: 2px solid #104E8B; */
+    display: flex;
+    justify-content: center;
+    align-items: start;      
+  }
+
+  .step:last-child {
+    margin-bottom: 0;
+  }
+
+  .text-block.is-active {
+    /* background-color: goldenrod; */
+    background-color: rgb(228, 228, 228);
+    color: #3b3b3b;
+    /* margin-top: 120px; */
+    margin-top: 50%;
+  }
+
+  .text-block {
+    /* background-color: salmon; */
+    background-color: rgb(206, 206, 206);
+    border-radius: 1rem;
+    margin-top: 50%;
+  }
+  
+  .step p {
+    text-align: justify;
+    text-align-last: left;
+    padding: 1.5rem;
+    line-height: 1.75;
+  }
+
+  iframe {
+    border: unset;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* NAV BAR BELOW */
+
+  .sticky_nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    z-index: 90;
+    height: 45px;
+  }
+
+  .sticky_nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 36px;
+    padding-top: 5px;
+    margin-left: 1rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .sticky_nav a:hover {
+    background-color: rgb(176, 176, 176);
+    color: black;
+    border-radius: 0.6rem;
+  }
+  
+  .sticky_nav a.active {
+    background-color: #009e91;
+    color: white;
+    border-radius: 0.6rem;
+  }
+    
+    
+  #back-to-top {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 100; /* Make sure the button stays on top of other content */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #009e91; /* Set the background color */
+    color: white; /* Set the text color */
+    cursor: pointer; /* Add a cursor on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: small;
+  }
+
+  #back-to-top-arrow {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #009e91;
+    z-index: 100; /* Make sure the button stays on top of other content */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #back-to-top-arrow:hover {
+    background-color: #777;
+  }
+  
+    
+  .github-corner:hover .octo-arm {
+animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .sticky_nav a.active {
+    /* Other styles for the active button */
+    transform: scale(1.1);  /* Increase the size of the button slightly */
+    transition: 0.2s;  /* Specify the duration of the animation */
+  }
+  
+  .sticky_nav a.active:active {
+    /* Other styles for the active button when it is being clicked on */
+    transform: scale(0.9);  /* Decrease the size of the button slightly */
+    transition: 0.2s;  /* Specify the duration of the animation */
+  }
+
+  .highlighted-text::selection {
+    background-color: #009e91;
+    color: #fff;
+  }
+
+  .highlighted-strong::selection {
+    background-color: #009e91;
+    color: #fff;
+  }
+
+  #highlighted-text::selection {
+    background-color: #009e91;
+    color: #fff;
+  }
+
+  #highlighted-strong::selection {
+    background-color: #009e91;
+    color: #fff;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding-top: 16px;
+    padding-bottom: 6px;
+    padding-left: 50px;
+  }  
+
+  .footer-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+  
+  @keyframes octocat-wave {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+  
+    20%,
+    60% {
+      transform: rotate(-25deg);
+    }
+  
+    40%,
+    80% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+      animation: none;
+    }
+  
+    .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+  
+  
+  /* 
+      .content {
+        padding: 16px;
+        z-index: 100;
+        position:relative;
+      }
+  
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+  
+      .sticky + .content {
+        padding-top: 60px;
+      } */
+  
+  
+  /* NAV BAR ABOVE */
+  
+  
